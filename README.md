@@ -1,7 +1,7 @@
 # GitHubAPI
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-The GitHub repository viewer is an application designed to provide a fast overview of essential details about repositories and users. It acquires repository information from GitHub's REST API endpoints, utilizing the HTTP protocol for both delivering data to users and fetching data from GitHub.
+The GitHubAPI is an application designed to provide an overview of essential details about repositories and users. It acquires repository or user information from GitHub's FastAPI endpoints, utilizing the HTTP protocol for both delivering data to users and fetching data from GitHub.
 
 <!-- TECHNOLOGIES USED -->
 ## Technologies used
