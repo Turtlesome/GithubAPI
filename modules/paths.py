@@ -8,7 +8,7 @@ def open_config():
     Reads a YAML configuration file and returns its contents.
 
     Returns:
-        - dict: The contents of the YAML configuration file.
+        - dict: The contents of the JSON configuration file.
     """
 
     app_dir = Path(__file__).parent.parent
