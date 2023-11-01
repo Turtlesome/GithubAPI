@@ -19,7 +19,7 @@ The GitHubAPI is an application designed to provide an overview of essential det
 
 <!-- INSTALLATION AND USAGE -->
 ## Installation
-Application can be set up in two ways. 
+Application can be set up in three ways. 
 
 ### First way:
 * clone repository
