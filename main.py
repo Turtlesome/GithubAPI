@@ -69,7 +69,7 @@ def read_user_repos(request: Request,
                 repos.sort(key=lambda repo: repo.updated_at, reverse=True)
                 
             repos_dicts = [repo.to_dict() for repo in repos]
-            with open('info\output_read_user_repos.json', 'w') as f:
+            with open(fr'info\output_read_user_repos.json', 'w') as f:
                 json.dump(repos_dicts, f, indent=4)
             return repos
         else:
@@ -103,7 +103,7 @@ def read_repo_pulls(request: Request, user_id: str, repo_id: str):
 def read_repo_files(request: Request, user_id: str, repo_id: str):
     try:
         files = list_files_in_repo(user_id, repo_id, token)
-        with open('info\output_read_repo_files.json', 'w') as f:
+        with open(fr'info\output_read_repo_files.json', 'w') as f:
             json.dump(files, f, indent=4)
         return files
     except Exception as e:
