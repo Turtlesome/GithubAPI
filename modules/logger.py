@@ -2,7 +2,6 @@ import colorlog
 import logging
 
 
-# Create a formatter that adds color to the log output
 formatter = colorlog.ColoredFormatter(
     "%(log_color)s%(asctime)s [%(name)s][%(levelname)s]%(reset)s %(message)s",
     datefmt="%Y%m%d %H:%M:%S",

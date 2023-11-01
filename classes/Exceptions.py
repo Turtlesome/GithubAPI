@@ -1,8 +1,6 @@
 class InvalidTokenException(Exception):
     """Raised when the provided GitHub token is invalid."""
     def __init__(self):
-        # When you define your own __init__ method in your exception classes, you’re overriding the __init__ method of the Exception class. 
-        # But you still want to keep the functionality of the original __init__ method, which is to accept an error message as an argument and store it in the exception object.
         super().__init__("The provided GitHub token is invalid.")
 
 class RateLimitExceededException(Exception):

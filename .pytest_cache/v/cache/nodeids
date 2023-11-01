@@ -1,4 +1,5 @@
 [
+  "test_main.py::test_read_repo_files",
   "test_main.py::test_read_repo_pulls",
   "test_main.py::test_read_user_profile",
   "test_main.py::test_read_user_repos"
