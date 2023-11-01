@@ -39,8 +39,8 @@ def read_user_repos(request: Request,
                     sort_by: Optional[str] = Query(None), 
                     min_stars: Optional[int] = Query(None),
                     max_stars: Optional[int] = Query(None),
-                    created_after: Optional[str] = Query(None),
-                    updated_after: Optional[str] = Query(None)):
+                    created: Optional[str] = Query(None),
+                    updated: Optional[str] = Query(None)):
     try:
         if user_id in cache:
             repos = cache[user_id]
@@ -54,10 +54,10 @@ def read_user_repos(request: Request,
                 repos = [repo for repo in repos if repo.getStarsCount() >= min_stars]
             if max_stars is not None:
                 repos = [repo for repo in repos if repo.getStarsCount() <= max_stars]
-            if created_after is not None:
-                repos = [repo for repo in repos if repo.created_at > created_after]
-            if updated_after is not None:
-                repos = [repo for repo in repos if repo.updated_at > updated_after]
+            if created is not None:
+                repos = [repo for repo in repos if repo.created_at > created]
+            if updated is not None:
+                repos = [repo for repo in repos if repo.updated_at > updated]
                 
             if sort_by == 'starsR':
                 repos.sort(key=lambda repo: repo.getStarsCount(), reverse=True)
