@@ -62,10 +62,13 @@ In current state of the app, all endpoints are accessible via HTTP requests on l
 
 Application has four basic functionalities. 
 1. It provides with list of all user's public repositories with options for sorting them by:
-   *a) name alphabetically (default behaviour)
-   *b) stars (from lowest to highest number or reverse) --> add after '?' sort_by=stars or sort_by=starsR, for example `http://localhost:8000/users/torvalds/repos?sort_by=stars`
-   *c) date created (from latest) --> add after '?' sort_by=created
-   *d) date updated (from latest) --> add after '?' sort_by=updated
+   a) name alphabetically (default behaviour)
+
+   b) stars (from lowest to highest number or reverse) --> add after '?' sort_by=stars or sort_by=starsR, for example `http://localhost:8000/users/torvalds/repos?sort_by=stars`
+
+   c) date created (from latest) --> add after '?' sort_by=created
+
+   d) date updated (from latest) --> add after '?' sort_by=updated
 
 All four endpoints are shown below:
 
