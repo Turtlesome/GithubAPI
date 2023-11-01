@@ -57,7 +57,7 @@ To install all needed libraries use this command:
 
 
 <!-- INSTALLATION AND USAGE -->
-## 🎯 Functionalities
+## Functionalities
 In current state of the app, all endpoints are accessible via HTTP requests on localhost:8000.
 
 Application has four basic functionalities. 
