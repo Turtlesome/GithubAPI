@@ -84,3 +84,7 @@ All four endpoints are shown below:
 * GET list of files in particular repositorium save them to json file
 
   `http://localhost:8000/{user_id}/{repo_id}/files`
+
+## Future development
+
+  There is of course room for extending current functionalities getting more or specific information from github. Moreover there is need for providing some information into logs.
