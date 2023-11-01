@@ -87,4 +87,4 @@ All four endpoints are shown below:
 
 ## Future development
 
-  There is of course room for extending current functionalities getting more or specific information from github. Moreover there is need for providing some information into logs.
+  There is of course room for extending current functionalities getting more or specific information from github. Moreover, there is need for providing some information into logs.
