@@ -63,9 +63,14 @@ To install all needed libraries use this command:
 ## Functionalities
 In current state of the app, all endpoints are accessible via HTTP requests on localhost:8000.
 
-Application has four basic functionalities. 
-1. It provides with list of all user's public repositories with options for sorting them by:
-   
+Application has four basic functionalities explained below:
+
+* GET all public repositories owned by a user and save them to json file
+
+  `http://localhost:8000/users/{user_id}/repos`
+
+  Options:
+  
    a) name alphabetically (default behaviour)
 
    b) stars (from lowest to highest number or reverse) --> add after '?' sort_by=stars or sort_by=starsR, for example `http://localhost:8000/users/torvalds/repos?sort_by=stars`
@@ -73,12 +78,6 @@ Application has four basic functionalities.
    c) date created (from latest) --> add after '?' sort_by=created
 
    d) date updated (from latest) --> add after '?' sort_by=updated
-
-All four endpoints are shown below:
-
-* GET all public repositories owned by a user and save them to json file
-
-  `http://localhost:8000/users/{user_id}/repos`
 
 * GET information about particular user by their name
 
