@@ -22,7 +22,7 @@ The GitHubAPI is an application designed to provide an overview of essential det
 Application can be set up in three ways. 
 
 ### First way:
-* clone repository
+* Clone repository
 
   `git clone https://github.com/Turtlesome/GithubAPI.git`
 
@@ -32,12 +32,14 @@ Application can be set up in three ways.
 
   `pip install -r requirements.txt`
 
-* run project using
+* Run project using
 
   `uvicorn main:app --reload`
 
 ### Second way:
-* Approach revolves around using docker to set up docker container and start app inside it. Docker image can be downloaded directly from DockerHub with using:
+* Use docker to set up docker container and start app inside it.
+
+  Docker image can be downloaded directly from DockerHub with using:
 
   `docker run -e GITHUB_TOKEN="Your_Github_Token" -p 8000:8000 turtlytortoise/githubapi`
 
@@ -51,6 +53,7 @@ Application can be set up in three ways.
 
 ### Third way:
 * Third approach is just starting the app in the IDE after cloning the repository.
+
 To install all needed libraries use this command:
 
   `pip install -r requirements.txt`
