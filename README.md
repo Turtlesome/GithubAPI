@@ -6,7 +6,7 @@ The GitHub repository viewer is an application designed to provide a fast overvi
 <!-- TECHNOLOGIES USED -->
 ## Technologies used
 * Python
-* RestAPI, FastAPI, SlowAPI
+* RestAPI, FastAPI
 * Docker
 * Uvicorn
 
