@@ -69,7 +69,7 @@ Application has four basic functionalities.
 
 All four endpoints are shown below:
 
-* GET all public repositories owned by a user and saves them to json file
+* GET all public repositories owned by a user and save them to json file
 
   `http://localhost:8000/users/{user_id}/repos`
 
@@ -81,6 +81,6 @@ All four endpoints are shown below:
 
   `http://localhost:8000/{user_id}/{repo_id}/pulls`
   
-* GET list of files in particular repositorium
+* GET list of files in particular repositorium save them to json file
 
   `http://localhost:8000/{user_id}/{repo_id}/files`
