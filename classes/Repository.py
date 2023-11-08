@@ -24,17 +24,22 @@ class Repository:
         self.created_at = created_at
         self.updated_at = updated_at
 
+
     def getRepositoryName(self):
         return self.repositoryName
+
 
     def getStarsCount(self):
         return self.starsCount
 
+
     def getCreationDate(self):
         return self.created_at
 
+
     def getLastUpdatedDate(self):
         return self.updated_at
+    
     
     def to_dict(self):
         return {
@@ -44,6 +49,7 @@ class Repository:
             "updated_at": self.updated_at
         }
 
+
     def __eq__(self, other):
         if self is other:
             return True
@@ -51,6 +57,7 @@ class Repository:
         if other is None or type(self) != type(other):
             return False
         return self.starsCount == other.starsCount and self.repositoryName == other.repositoryName and self.created_at == other.created_at and self.updated_at == other.updated_at
+
 
     def __str__(self):
         return f"Repository{{repositoryName={self.repositoryName}, starsCount={self.starsCount}, created_at={self.created_at}, updated_at={self.updated_at}}}"
