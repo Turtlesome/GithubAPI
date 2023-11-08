@@ -15,7 +15,6 @@ class Repository:
         getLastUpdatedDate(): Returns the last updated date of the repository.
         to_dict(): Returns a dictionary representation of the repository.
         __eq__(other): Determines if this repository is equal to another repository in terms of being an object.
-        __hash__(): Returns a hash value for the repository.
         __str__(): Returns a string representation of the repository.
     """    
 
@@ -52,9 +51,6 @@ class Repository:
         if other is None or type(self) != type(other):
             return False
         return self.starsCount == other.starsCount and self.repositoryName == other.repositoryName and self.created_at == other.created_at and self.updated_at == other.updated_at
-
-    def __hash__(self):
-        return hash((self.repositoryName, self.starsCount, self.created_at, self.updated_at))
 
     def __str__(self):
         return f"Repository{{repositoryName='{self.repositoryName}', starsCount={self.starsCount}, created_at={self.created_at}, updated_at={self.updated_at}}}"
