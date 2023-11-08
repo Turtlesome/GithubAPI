@@ -53,4 +53,4 @@ class Repository:
         return self.starsCount == other.starsCount and self.repositoryName == other.repositoryName and self.created_at == other.created_at and self.updated_at == other.updated_at
 
     def __str__(self):
-        return f"Repository{{repositoryName='{self.repositoryName}', starsCount={self.starsCount}, created_at={self.created_at}, updated_at={self.updated_at}}}"
+        return f"Repository{{repositoryName={self.repositoryName}, starsCount={self.starsCount}, created_at={self.created_at}, updated_at={self.updated_at}}}"

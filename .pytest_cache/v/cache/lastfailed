@@ -1,3 +1,10 @@
 {
-  "tests/test_main.py": true
+  "tests/test_main.py": true,
+  "test_Repository.py::test_getRepositoryName": true,
+  "test_Repository.py::test_getStarsCount": true,
+  "test_Repository.py::test_getCreationDate": true,
+  "test_Repository.py::test_getLastUpdatedDate": true,
+  "test_Repository.py::test_to_dict": true,
+  "test_Repository.py::test_eq": true,
+  "test_Repository.py::test_str": true
 }

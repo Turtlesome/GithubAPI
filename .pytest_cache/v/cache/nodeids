@@ -1,6 +1,20 @@
 [
+  "test_Repository.py::test_eq",
+  "test_Repository.py::test_getCreationDate",
+  "test_Repository.py::test_getLastUpdatedDate",
+  "test_Repository.py::test_getRepositoryName",
+  "test_Repository.py::test_getStarsCount",
+  "test_Repository.py::test_str",
+  "test_Repository.py::test_to_dict",
   "test_main.py::test_read_repo_files",
   "test_main.py::test_read_repo_pulls",
   "test_main.py::test_read_user_profile",
-  "test_main.py::test_read_user_repos"
+  "test_main.py::test_read_user_repos",
+  "tests/test_Repository.py::test_eq",
+  "tests/test_Repository.py::test_getCreationDate",
+  "tests/test_Repository.py::test_getLastUpdatedDate",
+  "tests/test_Repository.py::test_getRepositoryName",
+  "tests/test_Repository.py::test_getStarsCount",
+  "tests/test_Repository.py::test_str",
+  "tests/test_Repository.py::test_to_dict"
 ]
